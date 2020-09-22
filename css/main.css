@@ -25,3 +25,170 @@ img {
   display: block;
   width: 100%;
 }
+
+header {
+  display: grid;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.rock {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  color: #3783a3;
+}
+
+section {
+  margin: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  justify-content: center;
+  font-weight: lighter;
+}
+
+section > h2 {
+  font-size: 2rem;
+  max-width: 30em;
+}
+
+.cap {
+  font-weight: bold;
+}
+
+hr {
+  border: 1.5px solid #e2e2e2;
+  max-width: 30em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  border: .2rem solid #3783a3;
+  border-radius: .3rem;
+  padding: .5em 1em .6em;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+main {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .title {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: left;
+  }
+
+  nav {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: right;
+    align-items: center;
+  }
+
+  .ban {
+    display: grid;
+    grid-column: 1 / -1;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  section {
+    display: grid;
+    grid-column: 1 / 4;
+  }
+
+  section > h2 {
+    font-size: 1.5rem;
+    max-width: 15em;
+    font-weight: normal;
+  }
+
+  figure {
+    display: grid;
+  }
+
+  .viewing {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .gravel {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .symbolism {
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .cap {
+    margin-top: 0;
+    font-weight: bold;
+  }
+
+  .body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  footer {
+    display: grid;
+    grid-column: -4/-1;
+  }
+}
